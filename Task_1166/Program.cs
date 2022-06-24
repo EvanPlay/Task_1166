@@ -6,15 +6,18 @@ namespace Task_1166
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Здравствуйте. Я - Олег. Программа которая находит цифру, на которую оканчивается число A^B");
+            Console.WriteLine("Здравствуйте. Я - Олег. Программа которая находит цифру, на которую оканчивается число A^B. Внимание! Программа не может обработать результат, если он написан с использованием не целых чисел и/или в буквенном виде. Исключительно цыфры");
 
             Console.WriteLine("Введите число A");
-            int a = Convert.ToInt32(Console.ReadLine());
+            double a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите число B");
-            int b = Convert.ToInt32(Console.ReadLine());
+            double b = Convert.ToInt32(Console.ReadLine());
+            int d = (int)Math.Pow(a, b);
+
             Console.WriteLine("Результат: ");
-            Console.WriteLine(a ^ b);
-            int c = (a ^ b)%10;
+            Console.WriteLine(d);
+
+            int c = (d) % 10;
             Console.WriteLine("Ответ: ");
             Console.WriteLine(c);
         }
