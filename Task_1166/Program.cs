@@ -13,8 +13,8 @@ namespace Task_1166
             Console.WriteLine("Введите число B");
             int b = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Результат: ");
-            Console.WriteLine(a ^ b);
-            int c = (a ^ b)%10;
+            Console.WriteLine( d = Marh.Pow(a,b));
+            int c = (d)%10;
             Console.WriteLine("Ответ: ");
             Console.WriteLine(c);
         }
